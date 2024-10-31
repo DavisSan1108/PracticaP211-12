@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventanilla de Banco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ventanilla de Banco</h1>
+    <div class="client-form">
+      <h2>Datos del Cliente</h2>
+      <label for="turno">No. Turno:</label>
+      <input type="number" id="turno" class="input-field" readonly>
+      
+      <label for="nombre">Cliente:</label>
+      <input type="text" id="nombre" class="input-field">
+
+      <label for="movimiento">Movimiento:</label>
+      <select id="movimiento" class="input-field">
+        <option value="">Seleccionar</option>
+        <option value="Pago de servicio">Pago de servicio</option>
+        <option value="Depósito">Depósito</option>
+        <option value="Retiro">Retiro</option>
+        <option value="Compra de tiempo aire">Compra de tiempo aire</option>
+        <option value="Consulta de saldo">Consulta de saldo</option>
+      </select>
+
+      <button id="agregar" class="btn">Agregar a la Cola</button>
+      <button id="atender" class="btn">Atender en Ventanilla</button>
+      <button id="salir" class="btn">Salida del Sistema</button>
+    </div>
+
+    <h3>Cola de Clientes</h3>
+    <table id="colaClientes">
+      <thead>
+        <tr>
+          <th>No. Turno</th>
+          <th>Cliente</th>
+          <th>Tipo Movimiento</th>
+          <th>Hora de Llegada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Los clientes serán agregados aquí -->
+      </tbody>
+    </table>
+
+    <div class="status">
+      <p>Frente: <span id="frente">-</span></p>
+      <p>Final: <span id="final">-</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

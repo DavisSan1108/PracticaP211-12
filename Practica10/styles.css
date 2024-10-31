@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f3f5;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+
+  /* Estilos para el formulario de login */
+  .login-container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    color: #6f42c1;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #dfe1e6;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    background-color: #ff0080;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e60073;
+    transform: translateY(-2px);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  th {
+    background-color: #6f42c1;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  
+  td {
+    padding: 15px;
+    font-size: 1rem;
+    color: #2d3748;
+  }
+  
+  .status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0080;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+  }
+
+  /* Error message styling */
+  .error-msg {
+    color: red;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
